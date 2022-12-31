@@ -1,0 +1,220 @@
+body{
+    margin: 5px;
+    min-height: 100vh;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    background-color: #1d1f20;
+}
+
+h1{
+    text-align: center;
+    
+}
+
+.heart{
+    height: 50px;
+}
+
+.love{
+    font-family: "Incosolata", Consolas, monospace;
+    font-size: 4em;
+    color: #f5270b;
+}
+
+.type{
+    position: relative;
+}
+
+.type::after{
+    content: '|';
+    position: absolute;
+    right: 0;
+    color: white;
+    background-color: #1d1f20;
+    width: 100%;
+    animation: typing 3s steps(14) alternate infinite,
+                line 1s infinite;
+}
+@keyframes typing{
+    to{
+        width: 0%;
+    }
+}
+@keyframes line {
+    50%{
+        color: transparent;
+    }
+}
+
+.wrapper{
+    display: flex;
+    padding: 61px;
+}
+
+.wrapper .static-txt{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.wrapper .dynamic-txts{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+.my{
+    color: aquamarine;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.dynamic-txts li{
+    list-style: none;
+    color: #e83d3d;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+}
+
+  @keyframes slide {
+    100%{
+      top: -360px;
+    }
+  }
+
+.dynamic-txts li span{
+    position: relative;
+    line-height: 5px;
+    
+}
+
+.dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #1d1f20;
+    border-left: 2px solid #f84242;
+    animation: love 3s steps(10) infinite;
+}
+
+@keyframes love {
+    40%, 60%{
+        left: calc(100% + 30px);
+    }
+    100%{
+        left: 0;
+    }
+}
+
+.main-container,
+.heartShape,
+.heart3 {
+  height: 200px;
+  width: 350px;
+  overflow: hidden;
+  display: grid;
+  position: relative;
+  left: 95px;
+}
+
+.main-container{
+    
+  background: radial-gradient(
+    circle at 55% 55%,
+    hsl(0, 100%, 50%),
+    hsl(30, 100%, 50%),
+    hsl(60, 100%, 50%),
+    hsl(140, 100%, 50%),
+    hsl(190, 100%, 50%),
+    hsl(260, 100%, 50%),
+    hsl(330, 100%, 50%)40%
+  );
+  position: relative;
+    left: 626px;
+    bottom: 346px
+}
+
+svg {
+    position: absolute;
+    left: 52px;
+    top: 27px;
+    margin: auto;
+}
+
+
+.heartShape {
+  grid-column: 2 / 2;
+  grid-row: 2 / 2;
+}
+
+.heart3 {
+  background: #020303;
+  mix-blend-mode: multiply;
+  grid-column: 2 / 2;
+  grid-row: 2 / 2;
+}
+
+.heartShape::after {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 55% 55%,
+    hsl(0, 100%, 50%),
+    hsl(30, 100%, 50%),
+    hsl(60, 100%, 50%),
+    hsl(140, 100%, 50%),
+    hsl(190, 100%, 50%),
+    hsl(260, 100%, 50%),
+    hsl(330, 100%, 50%)40%
+  );
+  animation: subtle 9000ms infinite linear;
+}
+
+path {
+  stroke-width: 1px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 300px;
+  animation: dash 10000ms -10000ms infinite alternate ease-in-out,
+             w 7200ms -7200ms infinite alternate ease-in-out;
+}
+
+@keyframes dash {
+  100% {
+    stroke-dashoffset: -298px;
+  }
+}
+
+@keyframes w {
+  100% {
+    stroke-width: 12px;
+  }
+}
+
+@keyframes subtle {
+  100%{
+    transform: rotate(1turn);
+  }
+}
+
+
+.L{
+    color: yellowgreen;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 23px;
+    position: absolute;
+    top: 349px;
+    left: 700px;
+    background: none;
+    transform-origin: 0px 0px;
+    transform: rotate(90deg);
+}
+
