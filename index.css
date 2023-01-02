@@ -1,9 +1,6 @@
 body{
     margin: 5px;
     min-height: 100vh;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
     background-color: #1d1f20;
 }
 
@@ -116,8 +113,8 @@ h1{
 .main-container,
 .heartShape,
 .heart3 {
-  height: 200px;
-  width: 350px;
+  height: 272px;
+    width: 403px;
   overflow: hidden;
   display: grid;
   position: relative;
@@ -137,14 +134,14 @@ h1{
     hsl(330, 100%, 50%)40%
   );
   position: relative;
-    left: 626px;
-    bottom: 346px
+    left: 686px;
+    bottom: 312px
 }
 
 svg {
     position: absolute;
-    left: 52px;
-    top: 27px;
+    left: 75px;
+    top: 55px;
     margin: auto;
 }
 
@@ -166,13 +163,13 @@ svg {
   inset: 0;
   background: radial-gradient(
     circle at 55% 55%,
-    hsl(0, 100%, 50%),
-    hsl(30, 100%, 50%),
-    hsl(60, 100%, 50%),
+    hsl(0, 94%, 60%),
+    hsl(30, 77%, 61%),
+    hsl(60, 93%, 66%),
     hsl(140, 100%, 50%),
-    hsl(190, 100%, 50%),
+    hsl(190, 70%, 63%),
     hsl(260, 100%, 50%),
-    hsl(330, 100%, 50%)40%
+    hsl(330, 48%, 37%)40%
   );
   animation: subtle 9000ms infinite linear;
 }
@@ -211,8 +208,8 @@ path {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 23px;
     position: absolute;
-    top: 349px;
-    left: 700px;
+    top: 144px;
+    left: 753px;
     background: none;
     transform-origin: 0px 0px;
     transform: rotate(90deg);
